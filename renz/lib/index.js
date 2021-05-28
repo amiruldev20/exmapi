@@ -1,3 +1,3 @@
 module.exports = {
-Base: require('./utils/base')
+// require fitur
 }
