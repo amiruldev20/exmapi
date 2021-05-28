@@ -43,7 +43,8 @@
     "tiktok-scraper": "^1.4.12",
     "urlencode": "^1.1.0",
     "ytdl-core": "^4.4.5",
-    "ytpl": "^2.0.5"
+    "ytpl": "^2.0.5",
+    "ra-api": "^1.2.7"
   },
   "homepage": "https://github.com/amiruldev20/exampleapi#readme"
 }
