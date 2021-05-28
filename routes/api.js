@@ -28,6 +28,7 @@ var cheerio = require('cheerio');
 var request = require('request');
 var TikTokScraper = require('tiktok-scraper');
 var router  = express.Router();
+const am = require('ra-api');
 
 var { color, bgcolor } = require(__path + '/renz/lib/color.js');
 var { fetchJson } = require(__path + '/renz/lib/fetcher.js')
@@ -226,6 +227,34 @@ request(`https://tinyurl.com/api-create.php?url=${url}`, function (error, respon
      })
 })
 
+router.get('/igdl', async (req, res, next) => {
+var apikeyInput = req.query.apikey,
+url = req.query.url
+
+if(!apikeyInput) return res.json(m.nokey)
+if(apikeyInput != lock) return res.json(m.inkey)
+if (!url) return res.json(m.url)
+ 
+request(`https://tinyurl.com/api-create.php?url=${url}`, function (error, response, body) {
+ try {
+let eue = await am.igDownloader(url).then(
+		res => console.log(res)
+	)
+  res.json({
+    status : true,
+    code: 200,
+    creator : creator,
+      result : {
+           link : `${res}`,
+          },
+    message : `jangan lupa follow ${creator}`
+        })
+} catch (e) {
+ console.log('Error :', color(e,'red'))
+ res.json(`Url yang anda masukan salah\nexample: https://amiruldev.net`)
+         }
+     })
+})
 
 
 module.exports = router
