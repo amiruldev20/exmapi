@@ -1,9 +1,11 @@
 /*
-|===========================================|
-|WARNA TEKS DENGAN CHALK                    |
-|CREATOR: AMIRUL DEV                        |
-|WEB: WWW.AMIRULDEV.NET                     |
-|===========================================|
+|=======================================|
+| NAME: EXAMPLE API                     |
+| VERSION: 0.0.1                        |
+| CREATOR: AMIRUL DEV                   |
+| WEB: WWW.AMIRULDEV.NET                |
+| TEMPLATE BY: MBAH AGUS                |
+|=======================================|
 */
 const chalk = require('chalk')
 
