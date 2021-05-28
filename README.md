@@ -16,6 +16,11 @@
    <a href="https://instagram.com/amirul.dev"><img height="30" src="https://raw.githubusercontent.com/TobyG74/TobyG74/main/instagram.jpg"></a>
 </P>
 
+# NOTE
+KODE INI HANYA EXAMPLE UNTUK TEMEN TEMEN YANG
+PENGEN BELAJAR BIKIN API DAN DIDEPLOY DI HEROKU
+YANG UDA BISA DIBIASAKAN JANGAN MENGHUJAT
+
 ### Example Param
 1. link.com/api/tiny?apikey=renz&url=link.com
 2. localhost:port/api/tiny?apikey=renz&url=link
