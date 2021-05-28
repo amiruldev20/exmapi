@@ -6,7 +6,7 @@
 <a href="https://github.com/amiruldev20"><img title="Author" src="https://img.shields.io/badge/Author-AmirulDev-purple.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
-<a href="https://github.com/amiruldev20/followers"><img title="Followers" src="https://img.shields.io/github/followers/amiruldev20?color=red&style=flat-square"></a>
+<a href="https://github.com/amiruldev20?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/amiruldev20?color=red&style=flat-square"></a>
 <a href="https://github.com/amiruldev20/exampleapi/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/amiruldev20/exampleapi?color=yellow&style=flat-square"></a>
 <a href="https://github.com/amiruldev20/exampleapi/network/members"><img title="Forks" src="https://img.shields.io/github/forks/amiruldev20/exampleapi?color=green&style=flat-square"></a>
 <a href="https://github.com/amiruldev20/exampleapi/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/amiruldev20/exampleapi?label=Watchers&color=blue&style=flat-square"></a>
