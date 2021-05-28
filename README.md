@@ -16,6 +16,10 @@
    <a href="https://instagram.com/amirul.dev"><img height="30" src="https://raw.githubusercontent.com/TobyG74/TobyG74/main/instagram.jpg"></a>
 </P>
 
+### Example Param
+1. link.com/api/tiny?apikey=renz&url=link.com
+2. localhost:port/api/tiny?apikey=renz&url=link
+
 ## Special Thanks
 - Allah SWT
 - Otakku :v
