@@ -1,8 +1,11 @@
 /*
-|=================================|
-| CREATOR: AMIRUL DEV             |
-| WEB: WWW.AMIRULDEV.NET          |
-|=================================|
+|=======================================|
+| NAME: EXAMPLE API                     |
+| VERSION: 0.0.1                        |
+| CREATOR: AMIRUL DEV                   |
+| WEB: WWW.AMIRULDEV.NET                |
+| TEMPLATE BY: MBAH AGUS                |
+|=======================================|
 */
 const options = {
 // Number of posts to scrape: {int default: 20}
