@@ -238,7 +238,7 @@ if (!url) return res.json(m.url)
 request(`https://tinyurl.com/api-create.php?url=${url}`, function (error, response, body) {
  try {
 let eue = am.igDownloader(url).then(
-		res => console.log(res)
+		res => console.log(`hel`, res)
 	)
   res.json({
     status : true,
@@ -246,7 +246,6 @@ let eue = am.igDownloader(url).then(
     creator : creator,
       result : {
            link : `${res}`,
-     ur: eue,
           },
     message : `jangan lupa follow ${creator}`
         })
