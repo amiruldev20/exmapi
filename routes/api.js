@@ -78,109 +78,6 @@ silahkan beli di wa.me/6285157489446`
 
 }
 
-loghandler = {
-    notparam: {
-        status: false,
-        creator: `${creator}`,
-        code: 406,
-        message: 'masukan parameter apikey',
-        getApikey: 'gak punya apikey? chat gw aja yaaa di wa.me/6283898698875 , key nya gratis kok gan, jadi santuyy ajaa'
-    },
-    notkey: {
-        status: false,
-        creator: `${creator}`,
-        code: 406,
-        message: 'masukan parameter key'
-    },
-    noturl: {
-        status: false,
-        creator: `${creator}`,
-        code: 406,
-        message: 'masukan parameter url'
-    },
-    notkata: {
-        status: false,
-        creator: `${creator}`,
-        code: 406,
-        message: 'masukan parameter kata'
-    },
-    nottext: {
-        status: false,
-        creator: `${creator}`,
-        code: 406,
-        message: 'masukan parameter text'
-    },
-    nottext2: {
-        status: false,
-        creator: `${creator}`,
-        code: 406,
-        message: 'masukan parameter text2'
-    },
-    notnabi: {
-        status: false,
-        creator: `${creator}`,
-        code: 406,
-        message: 'masukan parameter nabi'
-    },
-    nottext3: {
-        status: false,
-        creator: `${creator}`,
-        code: 406,
-        message: 'masukan parameter text3'
-    },
-    nottheme: {
-        status: false,
-        creator: `${creator}`,
-        code: 406,
-        message: 'masukan parameter theme'
-    },
-    notusername: {
-        status: false,
-        creator: `${creator}`,
-        code: 406,
-        message: 'masukan parameter username'
-    },
-    notvalue: {
-        status: false,
-        creator: `${creator}`,
-        code: 406,
-        message: 'masukan parameter value'
-    },
-    notheme: {
-    	status: false,
-        creator: `${creator}`,
-        code: 406,
-        message: 'theme tidak tersedia silahkan masukkan texmaker/list atau baca documentasi'
-     },
-    invalidKey: {
-        status: false,
-        creator: `${creator}`,
-        code: 406,
-        message: 'apikey invalid, gak punya apikey? chat gw aja yaaa di wa.me/6283898698875 , key nya gratis kok gan, jadi santuyy ajaa'
-    },
-    invalidlink: {
-        status: false,
-        creator: `${creator}`,
-        message: 'error, mungkin link anda tidak valid.'
-    },
-    invalidkata: {
-        status: false,
-        creator: `${creator}`,
-        message: 'error, mungkin kata tidak ada dalam api.'
-    },
-    notAddApiKey: {
-        status: false,
-        creator: `${creator}`,
-        code: 406,
-        message: 'masukan parameter status, apikeyInput, email, nomorhp, name, age, country, exp'
-    },
-    error: {
-        status: false,
-        creator: `${creator}`,
-        message: 'mungkin sedang dilakukan perbaikan'
-    }
-}
-
 var len = 15
         var arr = '123456789abcdefghijklmnopqrstuvwxyz'
         var random = '';
@@ -227,34 +124,7 @@ request(`https://tinyurl.com/api-create.php?url=${url}`, function (error, respon
      })
 })
 
-router.get('/igdl', async (req, res, next) => {
-var apikeyInput = req.query.apikey,
-url = req.query.url
 
-if(!apikeyInput) return res.json(m.nokey)
-if(apikeyInput != lock) return res.json(m.inkey)
-if (!url) return res.json(m.url)
- 
-request(`https://tinyurl.com/api-create.php?url=${url}`, function (error, response, body) {
- try {
-let eue = am.igDownloader(url).then(
-		res => console.log(`hel`, res)
-	)
-  res.json({
-    status : true,
-    code: 200,
-    creator : creator,
-      result : {
-           link : `${res}`,
-          },
-    message : `jangan lupa follow ${creator}`
-        })
-} catch (e) {
- console.log('Error :', color(e,'red'))
- res.json(`Url yang anda masukan salah\nexample: https://amiruldev.net`)
-         }
-     })
-})
 
 
 module.exports = router
