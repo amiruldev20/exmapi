@@ -10,7 +10,7 @@
 var express = require('express'),
 cors = require('cors'),
 secure = require('ssl-express-www');
-const PORT = process.env.PORT || 1 || 2 || 3 
+const PORT = process.env.PORT || 1337
 /* port edit sesukamu */
 
 var { color } = require('./renz/lib/color.js')
